@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Her Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">HerGallery</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Capturing Beauty</h1>
+        <p>Every picture tells a story.</p>
+      </div>
+    </section>
+  </header>
+
+
+  <section class="gallery" id="gallery">
+  <div class="section-title">
+    <h2>Moments That Speak</h2>
+    <p>Each frame tells a story — elegant, warm, and timeless.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="image/bk1.jpg" alt="Memory 1">
+      <div class="card-overlay">
+        <h3>Pure Joy</h3>
+        <p>Capturing the light within every smile.</p>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="image/bk2.jpg" alt="Memory 2">
+      <div class="card-overlay">
+        <h3>Grace</h3>
+        <p>Elegance in its calmest form.</p>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/bk1" alt="Memory 3">
+      <div class="card-overlay">
+        <h3>Moments</h3>
+        <p>Where time stands still for beauty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="image/bk2.jpg" alt="Her portrait">
+    </div>
+    <div class="about-text">
+      <h2>About Her</h2>
+      <p>
+        She carries a calm energy that speaks before words do —  
+        thoughtful, driven, and effortlessly graceful.  
+        Every moment around her feels balanced, modern, and inspiring.  
+      </p>
+      <button class="about-btn">See More</button>
+    </div>
+  </div>
+</section>
+
+<section class="message-section" id="message">
+  <div class="message-container">
+    <h2>Message From David</h2>
+    <p class="message-hint">Click below to reveal...</p>
+    <button class="show-message-btn">Read Message</button>
+
+    <div class="message-box">
+      <p class="message-text"></p>
+    </div>
+  </div>
+</section>
+
+<section class="reflection" id="reflection">
+  <div class="reflection-content">
+    <h2 class="reflection-title">A Quiet Thought</h2>
+    <p class="reflection-quote"></p>
+  </div>
+</section>
+
+<section class="david-section" id="david">
+  <div class="david-container">
+    <div class="david-img"></div>
+    <div class="david-text">
+      <h2>David Akpan</h2>
+      <p>A curious mind who loves to create.  
+      I believe design isn’t just what you see — it’s what you feel when it all comes together.</p>
+      <button class="david-btn">See Something Cool</button>
+      <div class="david-reveal"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="message-section" id="message">
+  <div class="message-container">
+    <h2>Send Me a Message 🎶</h2>
+    <p>Say anything you’d like — I’ll be listening.</p>
+    <form id="messageForm">
+      <input type="text" id="name" placeholder="Your name" required>
+      <textarea id="messageInput" placeholder="Type your message..." required></textarea>
+      <button type="submit" id="sendBtn">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3>✅ Message Sent Successfully!</h3>
+      <p>Thanks for your message 💫</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="rating-section" id="rating">
+  <div class="rating-container">
+    <h2>Rate This Site 💫</h2>
+    <p>How much do you like it? (1 - 100)</p>
+    <div class="rating-box">
+      <input type="number" id="ratingInput" placeholder="Enter a number" min="1" max="100" />
+      <button id="rateBtn">Rate Now</button>
+    </div>
+    <div class="rating-result" id="ratingResult"></div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#message">Message</a>
+      <a href="#rating">Rate</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> — Designed by <span class="david">David Akpan</span></p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
